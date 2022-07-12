@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tree 🌲</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <h1>Tree</h1>
+        <h1>Tree <span>🌲</span></h1>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,11 +23,21 @@
     <main>
         <section class="slider">
             <section class="slider-container">
-                
+                <img src="images/arrow.png" alt="left_Arrow" class="left_arrow" id="before">
 
-                <section class="slider__body slider__body--show">
+                <section class="slider__body slider__body--show" data-id="1">
                     <div class="slider__image">
-                        <img src="img/tree.jpg" alt="Tree">
+                        <img src="images/yop.png" alt="Tree" class="slider_first_img">
+                    </div>
+                    <div class="slider__text">
+                        <h2>Hola!, soy Carlos Reyes</h2>
+                        <p>Soy parte del equipo de desarrollo de Tree, un proyecto enfocado en el desarrollo web y la automatizacion de procesos, siempre buscamos la forma de hacer de la vida un lugar mas practico y entendible</p>
+                    </div>
+                </section>
+
+                <section class="slider__body" data-id="2">
+                    <div class="slider__image">
+                        <img src="images/tree.png" alt="Tree">
                     </div>
                     <div class="slider__text">
                         <h2>Tree</h2>
@@ -33,9 +45,9 @@
                     </div>
                 </section>
 
-                <section class="slider__body">
+                <section class="slider__body" data-id="3">
                     <div class="slider__image">
-                        <img src="img/tree.jpg" alt="Tree">
+                        <img src="images/tree.png" alt="Tree">
                     </div>
                     <div class="slider__text">
                         <h2>Tree</h2>
@@ -43,18 +55,11 @@
                     </div>
                 </section>
 
-                <section class="slider__body">
-                    <div class="slider__image">
-                        <img src="img/tree.jpg" alt="Tree">
-                    </div>
-                    <div class="slider__text">
-                        <h2>Tree</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quia, quisquam.</p>
-                    </div>
-                </section>
-
+                <img src="images/arrow.png" alt="right_Arrow" class="right_arrow" id="after">
             </section>
         </section>
     </main>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
